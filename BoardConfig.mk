@@ -28,9 +28,6 @@ TARGET_TS_MAKEUP := true
 # Kernel
 TARGET_KERNEL_CONFIG := X00P_defconfig
 
-# Libinit
-TARGET_LIBINIT_MSM8937_DEFINES_FILE := $(DEVICE_PATH)/libinit/init_X00P.cpp
-
 # Libshim
 TARGET_LD_SHIM_LIBS := /vendor/bin/mm-qcamera-daemon|vendor/lib/libshims_camera.so
 
