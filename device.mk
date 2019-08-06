@@ -15,10 +15,10 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/land
+DEVICE_PATH := device/asus/X00P
 
 # Inherit proprietary files
-$(call inherit-product-if-exists, vendor/xiaomi/land/land-vendor.mk)
+$(call inherit-product-if-exists, vendor/asus/X00P/X00P-vendor.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -42,4 +42,4 @@ PRODUCT_PACKAGES += \
 -include $(DEVICE_PATH)/vendor_prop.mk
 
 # Inherit from msm8937-common
-$(call inherit-product, device/xiaomi/msm8937-common/msm8937.mk)
+$(call inherit-product, device/asus/msm8937-common/msm8937.mk)

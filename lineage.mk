@@ -23,25 +23,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from land device
+# Inherit from X00P device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-PRODUCT_BRAND := Xiaomi
-PRODUCT_DEVICE := land
-PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_land
+PRODUCT_BRAND := asus
+PRODUCT_DEVICE := X00P
+PRODUCT_MANUFACTURER := asus
+PRODUCT_NAME := lineage_X00P
+PRODUCT_MODEL := X00P
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-TARGET_VENDOR_PRODUCT_NAME := land
+PRODUCT_GMS_CLIENTID_BASE := android-asus
+TARGET_VENDOR_PRODUCT_NAME := X00P
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="land-user 6.0.1 MMB29M V10.1.1.0.MALMIFI release-keys"
+    PRIVATE_BUILD_DESC="E300L_WW-user 8.0.0 OPR1.170623.032 eng.root.20190521.160404 release-keys"
 
-BUILD_FINGERPRINT := Xiaomi/land/land:6.0.1/MMB29M/V10.1.1.0.MALMIFI:user/release-keys
-
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
-    ro.product.model
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.build.security_patch=2017-04-01
+BUILD_FINGERPRINT := asus/WW_X00PD/ASUS_X00P_4:8.0.0/OPR1.170623.032/15.00.1905.101:user/release-keys
