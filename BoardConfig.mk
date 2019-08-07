@@ -23,7 +23,6 @@ DEVICE_PATH := device/asus/X00P
 # Camera
 BOARD_QTI_CAMERA_32BIT_ONLY := true
 USE_DEVICE_SPECIFIC_CAMERA := true
-TARGET_TS_MAKEUP := true
 
 # Kernel
 TARGET_KERNEL_CONFIG := X00P_defconfig
